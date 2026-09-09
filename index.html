@@ -98,3 +98,88 @@
   </main>
 </body>
 </html>
+<!-- Social Media Icons -->
+<div class="social-icons">
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/share/1E7mv1rq5R/?mibextid=wwXIfr"
+     target="_blank" rel="noopener noreferrer" class="social facebook" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/badr.hany44"
+     target="_blank" rel="noopener noreferrer" class="social instagram" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@badr__hany4"
+     target="_blank" rel="noopener noreferrer" class="social tiktok" aria-label="TikTok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  <!-- WhatsApp -->
+  <a href="https://wa.me/20XXXXXXXXXX"
+     target="_blank" rel="noopener noreferrer" class="social whatsapp" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+<!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.social {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social:hover {
+  transform: translateY(-7px) scale(1.12);
+}
+.social:active {
+  transform: scale(0.92);
+}
+/* Facebook */
+.facebook {
+  background: #1877F2;
+  box-shadow: 0 6px 18px rgba(24,119,242,0.35);
+}
+/* Instagram */
+.instagram {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  box-shadow: 0 6px 18px rgba(214,41,118,0.35);
+}
+/* TikTok */
+.tiktok {
+  background: #000;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+/* WhatsApp */
+.whatsapp {
+  background: #25D366;
+  box-shadow: 0 6px 18px rgba(37,211,102,0.35);
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .social {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+  .social-icons {
+    gap: 14px;
+  }
+}
+</style>
