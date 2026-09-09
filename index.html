@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>الدكتور بدر هاني فاروق | طبيب بشري - جامعة الفيوم</title>
-<link rel="icon" type="image/jpeg" href="badr-hany-farouk.jpeg">
+
+  <link rel="icon" type="image/jpeg" href="badr-hany-farouk.jpeg">
+
   <meta name="description" content="الموقع الشخصي للدكتور بدر هاني فاروق، طالب طب بشري بجامعة الفيوم. رحلة من التفوق الدراسي إلى الطموح الطبي.">
 
   <meta name="author" content="بدر هاني فاروق">
@@ -20,10 +22,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
 
   <style>
 
@@ -379,6 +386,90 @@
       font-size: 14px;
     }
 
+    /* SCORE */
+
+    .score-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      margin-top: 15px;
+    }
+
+    .score-total {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    .score-percent {
+      width: 86px;
+      height: 86px;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .score-percent svg {
+      width: 86px;
+      height: 86px;
+      transform: rotate(-90deg);
+      overflow: visible;
+    }
+
+    .score-percent circle {
+      fill: none;
+      stroke-width: 8;
+    }
+
+    .score-percent .circle-bg {
+      stroke: rgba(128,128,128,0.18);
+    }
+
+    .score-percent .circle-progress {
+      stroke: var(--accent);
+      stroke-linecap: round;
+      stroke-dasharray: 193.3 213.6;
+      stroke-dashoffset: 213.6;
+      animation: scoreProgress 1.5s ease-out forwards;
+      filter: drop-shadow(0 3px 5px rgba(214,168,79,0.25));
+    }
+
+    .score-percent span {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 800;
+      z-index: 2;
+    }
+
+    .score-percent::before {
+      content: "";
+      position: absolute;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: var(--card);
+      left: 9px;
+      top: 9px;
+      z-index: 0;
+    }
+
+    .score-percent:hover {
+      transform: scale(1.07);
+      transition: transform 0.3s ease;
+    }
+
+    @keyframes scoreProgress {
+      to {
+        stroke-dashoffset: 20.3;
+      }
+    }
+
     /* TIMELINE */
 
     .timeline {
@@ -559,7 +650,6 @@
       color: var(--primary);
       box-shadow: var(--shadow);
       transition: 0.3s;
-      font-size: 20px;
     }
 
     .social a:hover {
@@ -693,7 +783,6 @@
       section {
         padding: 65px 18px;
       }
-
     }
 
     @media (max-width: 500px) {
@@ -722,84 +811,67 @@
         right: 4px;
       }
 
+      .score-box {
+        gap: 15px;
+      }
+
+      .score-total {
+        font-size: 20px;
+      }
+
+      .score-percent,
+      .score-percent svg {
+        width: 78px;
+        height: 78px;
+      }
+
+      .score-percent::before {
+        width: 61px;
+        height: 61px;
+        left: 8.5px;
+        top: 8.5px;
+      }
+
+      .score-percent span {
+        font-size: 13px;
+      }
     }
-.score-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 15px;
-}
 
-.score-total {
-  font-size: 22px;
-  font-weight: 800;
-}
-
-.score-percent {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  border: 5px solid #d4af37;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-}
-
-.score-percent span {
-  font-size: 16px;
-  font-weight: 800;
-}
-/* تحسين دائرة النسبة */
-body.dark .score-percent {
-  background: var(--card);
-  border-color: var(--accent);
-  color: var(--text);
-}
-
-.score-percent {
-  transition: all 0.3s ease;
-}
-
-.score-percent:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
-}
   </style>
+
   <!-- SEO PREMIUM -->
 
-<link rel="canonical" href="https://booda42008-spec.github.io/badr-hany-farouk/">
+  <link rel="canonical" href="https://booda42008-spec.github.io/badr-hany-farouk/">
 
-<meta property="og:url" content="https://booda42008-spec.github.io/badr-hany-farouk/">
-<meta property="og:locale" content="ar_EG">
-<meta property="og:site_name" content="الدكتور بدر هاني فاروق">
-<meta property="og:image" content="https://booda42008-spec.github.io/badr-hany-farouk/badr-hany-farouk.jpeg">
-<meta property="og:image:alt" content="الدكتور بدر هاني فاروق">
+  <meta property="og:url" content="https://booda42008-spec.github.io/badr-hany-farouk/">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:site_name" content="الدكتور بدر هاني فاروق">
+  <meta property="og:image" content="https://booda42008-spec.github.io/badr-hany-farouk/badr-hany-farouk.jpeg">
+  <meta property="og:image:alt" content="الدكتور بدر هاني فاروق">
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="الدكتور بدر هاني فاروق | طب بشري - جامعة الفيوم">
-<meta name="twitter:description" content="الموقع الشخصي للدكتور بدر هاني فاروق، طالب طب بشري بجامعة الفيوم، ومسيرته التعليمية وطموحه في المجال الطبي.">
-<meta name="twitter:image" content="https://booda42008-spec.github.io/badr-hany-farouk/badr-hany-farouk.jpeg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="الدكتور بدر هاني فاروق | طب بشري - جامعة الفيوم">
+  <meta name="twitter:description" content="الموقع الشخصي للدكتور بدر هاني فاروق، طالب طب بشري بجامعة الفيوم، ومسيرته التعليمية وطموحه في المجال الطبي.">
+  <meta name="twitter:image" content="https://booda42008-spec.github.io/badr-hany-farouk/badr-hany-farouk.jpeg">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "الدكتور بدر هاني فاروق",
-  "url": "https://booda42008-spec.github.io/badr-hany-farouk/",
-  "jobTitle": "طالب طب بشري",
-  "affiliation": {
-    "@type": "CollegeOrUniversity",
-    "name": "جامعة الفيوم"
-  },
-  "sameAs": [
-    "https://www.instagram.com/badr.hany44",
-    "https://www.tiktok.com/@badr__hany4"
-  ]
-}
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "الدكتور بدر هاني فاروق",
+    "url": "https://booda42008-spec.github.io/badr-hany-farouk/",
+    "jobTitle": "طالب طب بشري",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "جامعة الفيوم"
+    },
+    "sameAs": [
+      "https://www.instagram.com/badr.hany44",
+      "https://www.tiktok.com/@badr__hany4"
+    ]
+  }
+  </script>
+
 </head>
 
 <body>
@@ -826,7 +898,6 @@ body.dark .score-percent {
 
     </div>
   </nav>
-
 
   <!-- HERO -->
 
@@ -856,12 +927,18 @@ body.dark .score-percent {
 
         <div class="hero-buttons">
 
-          <a href="achievements.html" class="btn btn-primary">
+          <a
+            href="achievements.html"
+            class="btn btn-primary"
+          >
             <i class="fa-solid fa-trophy"></i>
             إنجازاتي
           </a>
 
-          <a href="#about" class="btn btn-secondary">
+          <a
+            href="#about"
+            class="btn btn-secondary"
+          >
             <i class="fa-solid fa-user"></i>
             تعرف عليّ
           </a>
@@ -869,7 +946,6 @@ body.dark .score-percent {
         </div>
 
       </div>
-
 
       <div class="hero-image">
 
@@ -888,7 +964,6 @@ body.dark .score-percent {
 
   </header>
 
-
   <!-- ABOUT -->
 
   <section id="about">
@@ -904,7 +979,6 @@ body.dark .score-percent {
       </p>
 
     </div>
-
 
     <div class="intro-card">
 
@@ -925,7 +999,6 @@ body.dark .score-percent {
 
   </section>
 
-
   <!-- STATS -->
 
   <section>
@@ -937,7 +1010,6 @@ body.dark .score-percent {
       <h2>أبرز محطات الرحلة</h2>
 
     </div>
-
 
     <div class="stats">
 
@@ -955,7 +1027,6 @@ body.dark .score-percent {
 
       </div>
 
-
       <div class="stat">
 
         <div class="stat-icon">
@@ -963,19 +1034,46 @@ body.dark .score-percent {
         </div>
 
         <div class="score-box">
-  <div class="score-total">289.5 / 320</div>
 
-  <div class="score-percent">
-    <span>90.47%</span>
-  </div>
-</div>
+          <div class="score-total">
+            289.5 / 320
+          </div>
+
+          <div
+            class="score-percent"
+            role="img"
+            aria-label="نسبة الثانوية العامة 90.47 بالمئة"
+          >
+
+            <svg viewBox="0 0 86 86" aria-hidden="true">
+
+              <circle
+                class="circle-bg"
+                cx="43"
+                cy="43"
+                r="34"
+              ></circle>
+
+              <circle
+                class="circle-progress"
+                cx="43"
+                cy="43"
+                r="34"
+              ></circle>
+
+            </svg>
+
+            <span>90.47%</span>
+
+          </div>
+
+        </div>
 
         <span>
           درجة الثانوية العامة 2026
         </span>
 
       </div>
-
 
       <div class="stat">
 
@@ -995,7 +1093,6 @@ body.dark .score-percent {
 
   </section>
 
-
   <!-- EDUCATION JOURNEY -->
 
   <section id="journey">
@@ -1012,9 +1109,7 @@ body.dark .score-percent {
 
     </div>
 
-
     <div class="timeline">
-
 
       <div class="timeline-item">
 
@@ -1040,7 +1135,6 @@ body.dark .score-percent {
 
       </div>
 
-
       <div class="timeline-item">
 
         <div class="timeline-dot"></div>
@@ -1065,7 +1159,6 @@ body.dark .score-percent {
 
       </div>
 
-
       <div class="timeline-item">
 
         <div class="timeline-dot"></div>
@@ -1089,11 +1182,9 @@ body.dark .score-percent {
 
       </div>
 
-
     </div>
 
   </section>
-
 
   <!-- PERSONALITY -->
 
@@ -1107,9 +1198,7 @@ body.dark .score-percent {
 
     </div>
 
-
     <div class="cards">
-
 
       <div class="card">
 
@@ -1126,7 +1215,6 @@ body.dark .score-percent {
 
       </div>
 
-
       <div class="card">
 
         <i class="fa-solid fa-person-swimming"></i>
@@ -1141,7 +1229,6 @@ body.dark .score-percent {
         </p>
 
       </div>
-
 
       <div class="card">
 
@@ -1158,11 +1245,9 @@ body.dark .score-percent {
 
       </div>
 
-
     </div>
 
   </section>
-
 
   <!-- VISION -->
 
@@ -1189,7 +1274,6 @@ body.dark .score-percent {
 
   </section>
 
-
   <!-- ACHIEVEMENTS -->
 
   <section>
@@ -1206,10 +1290,12 @@ body.dark .score-percent {
 
     </div>
 
-
     <div class="achievement-box">
 
-      <a href="achievements.html" class="achievement-btn">
+      <a
+        href="achievements.html"
+        class="achievement-btn"
+      >
 
         <i class="fa-solid fa-trophy"></i>
 
@@ -1222,7 +1308,6 @@ body.dark .score-percent {
     </div>
 
   </section>
-
 
   <!-- CONTACT -->
 
@@ -1240,30 +1325,30 @@ body.dark .score-percent {
 
     </div>
 
-
     <div class="social">
 
       <a
         href="https://www.facebook.com/share/1E7mv1rq5R/?mibextid=wwXIfr"
-        target="_blank" rel="noopener noreferrer"
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label="Facebook"
       >
         <i class="fa-brands fa-facebook-f"></i>
       </a>
 
-
       <a
         href="https://www.instagram.com/badr.hany44"
-        target="_blank" rel="noopener noreferrer"
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label="Instagram"
       >
         <i class="fa-brands fa-instagram"></i>
       </a>
 
-
       <a
         href="https://www.tiktok.com/@badr__hany4"
-        target="_blank" rel="noopener noreferrer"
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label="TikTok"
       >
         <i class="fa-brands fa-tiktok"></i>
@@ -1273,18 +1358,17 @@ body.dark .score-percent {
 
   </section>
 
-
   <!-- FLOATING WHATSAPP -->
 
   <a
     class="whatsapp"
     href="https://wa.me/201044447453"
-    target="_blank" rel="noopener noreferrer"
+    target="_blank"
+    rel="noopener noreferrer"
     aria-label="WhatsApp"
   >
     <i class="fa-brands fa-whatsapp"></i>
   </a>
-
 
   <!-- FOOTER -->
 
@@ -1297,7 +1381,6 @@ body.dark .score-percent {
     </p>
 
   </footer>
-
 
   <!-- DARK MODE SCRIPT -->
 
@@ -1327,7 +1410,6 @@ body.dark .score-percent {
       }
 
     }
-
 
     if (localStorage.getItem("theme") === "dark") {
 
