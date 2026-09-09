@@ -1,912 +1,1266 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
+  <meta charset="UTF-8">
 
-  <meta name="google-site-verification"
-        content="9_xIsRiSwYG2b4pUX64qzBQMsOFDBmzlZTXOeWVVwrk" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الدكتور بدر هاني فاروق | طبيب بشري - جامعة الفيوم</title>
 
-  <title>الدكتور بدر هاني فاروق | طب بشري – جامعة الفيوم</title>
-
-  <meta name="description"
-        content="الدكتور بدر هاني فاروق، طالب الطب البشري بجامعة الفيوم، يسعى إلى بناء مسيرة علمية ومهنية متميزة تقوم على العلم والاجتهاد والطموح والتطوير المستمر.">
+  <meta name="description" content="الموقع الشخصي للدكتور بدر هاني فاروق، طالب طب بشري بجامعة الفيوم. رحلة من التفوق الدراسي إلى الطموح الطبي.">
 
   <meta name="author" content="بدر هاني فاروق">
 
-  <meta property="og:title"
-        content="الدكتور بدر هاني فاروق | طب بشري – جامعة الفيوم">
+  <meta name="google-site-verification" content="9_xIsRiSwYG2b4pUX64qzBQMsOFDBmzlZTXOeWVVwrk">
 
-  <meta property="og:description"
-        content="صفحة تعريفية بالدكتور بدر هاني فاروق، طالب الطب البشري بجامعة الفيوم.">
+  <meta property="og:title" content="الدكتور بدر هاني فاروق">
+  <meta property="og:description" content="طبيب بشري - جامعة الفيوم | التفوق والطموح وصناعة المستقبل">
+  <meta property="og:type" content="website">
 
-  <meta property="og:type" content="profile">
-  <meta property="og:image" content="badr-hany-farouk.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta name="twitter:title"
-        content="الدكتور بدر هاني فاروق">
-
-  <meta name="twitter:description"
-        content="طالب طب بشري – جامعة الفيوم">
-
-  <meta name="twitter:image"
-        content="badr-hany-farouk.jpeg">
-
-
-  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-
-  <!-- Google Structured Data -->
-
-  <script type="application/ld+json">
-
-  {
-    "@context":"https://schema.org",
-
-    "@type":"ProfilePage",
-
-    "name":"الدكتور بدر هاني فاروق",
-
-    "description":"صفحة تعريفية بالدكتور بدر هاني فاروق، طالب الطب البشري بجامعة الفيوم.",
-
-    "mainEntity":{
-
-      "@type":"Person",
-
-      "name":"بدر هاني فاروق",
-
-      "honorificPrefix":"دكتور",
-
-      "jobTitle":"طالب طب بشري",
-
-      "image":"badr-hany-farouk.jpeg",
-
-      "affiliation":{
-
-        "@type":"CollegeOrUniversity",
-
-        "name":"جامعة الفيوم"
-
-      }
-
-    }
-
-  }
-
-  </script>
-
-
   <style>
 
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
+    :root {
+      --primary: #123b5d;
+      --secondary: #1f6f9f;
+      --accent: #d6a84f;
+      --text: #172033;
+      --muted: #617084;
+      --background: #f4f7fb;
+      --card: rgba(255,255,255,0.88);
+      --border: rgba(18,59,93,0.10);
+      --shadow: 0 20px 60px rgba(18,59,93,0.12);
+    }
+
+    body.dark {
+      --primary: #7fc5f1;
+      --secondary: #4fa4d7;
+      --accent: #e9c36a;
+      --text: #f3f7fb;
+      --muted: #b6c4d2;
+      --background: #0b1420;
+      --card: rgba(20,31,45,0.90);
+      --border: rgba(255,255,255,0.09);
+      --shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
 
     body {
-
-      margin: 0;
-
-      font-family: Arial, "Tahoma", sans-serif;
-
-      background: #f5f7fb;
-
-      color: #172033;
-
+      font-family: "Cairo", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(31,111,159,0.12), transparent 35%),
+        radial-gradient(circle at bottom left, rgba(214,168,79,0.08), transparent 30%),
+        var(--background);
+      color: var(--text);
       line-height: 1.9;
-
+      transition: background 0.4s, color 0.4s;
     }
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* NAVBAR */
+
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 15px 20px;
+      background: rgba(255,255,255,0.72);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    body.dark nav {
+      background: rgba(11,20,32,0.78);
+    }
+
+    .nav-inner {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .brand {
+      font-weight: 800;
+      color: var(--primary);
+      font-size: 18px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--secondary);
+      transform: translateY(-2px);
+    }
+
+    .theme-btn {
+      border: none;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      cursor: pointer;
+      background: var(--primary);
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .theme-btn:hover {
+      transform: rotate(15deg) scale(1.05);
+    }
+
+    /* HERO */
 
     .hero {
-
       min-height: 100vh;
-
+      padding: 145px 20px 80px;
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
-      padding: 35px 18px;
-
     }
 
+    .hero-box {
+      width: 100%;
+      max-width: 1150px;
+      min-height: 620px;
+      border-radius: 35px;
+      overflow: hidden;
+      position: relative;
+      background:
+        linear-gradient(135deg, rgba(10,39,61,0.98), rgba(31,111,159,0.92));
+      box-shadow: 0 35px 100px rgba(18,59,93,0.25);
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      padding: 70px;
+      color: white;
+    }
+
+    .hero-box::before {
+      content: "";
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      top: -170px;
+      left: -100px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      animation: fadeUp 1s ease;
+    }
+
+    .small-title {
+      display: inline-block;
+      padding: 7px 16px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 30px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 5vw, 68px);
+      line-height: 1.25;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #e9c36a;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(18px, 2vw, 25px);
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 18px;
+    }
+
+    .hero-description {
+      color: rgba(255,255,255,0.72);
+      max-width: 650px;
+      margin-bottom: 32px;
+      font-size: 16px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 22px;
+      border-radius: 14px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #e9c36a;
+      color: #132c40;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.20);
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+    }
+
+    /* PROFILE IMAGE */
+
+    .hero-image {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .image-frame {
+      width: 330px;
+      height: 400px;
+      padding: 10px;
+      border-radius: 180px 180px 35px 35px;
+      background: linear-gradient(145deg, #e9c36a, rgba(255,255,255,0.3));
+      box-shadow: 0 25px 70px rgba(0,0,0,0.25);
+      transform: rotate(2deg);
+    }
+
+    .image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 170px 170px 28px 28px;
+      display: block;
+      transform: rotate(-2deg);
+    }
+
+    /* SECTION */
+
+    section {
+      max-width: 1150px;
+      margin: auto;
+      padding: 90px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title small {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 15px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      color: var(--primary);
+      margin: 5px 0 10px;
+      font-weight: 800;
+    }
+
+    .section-title p {
+      max-width: 650px;
+      margin: auto;
+      color: var(--muted);
+    }
+
+    /* INTRO */
+
+    .intro-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      backdrop-filter: blur(15px);
+    }
+
+    .intro-card p {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    /* STATS */
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 25px;
+      padding: 32px 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+    }
+
+    .stat:hover {
+      transform: translateY(-7px);
+    }
+
+    .stat-icon {
+      width: 58px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 13px;
+      border-radius: 18px;
+      background: rgba(31,111,159,0.10);
+      color: var(--secondary);
+      font-size: 22px;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--primary);
+      font-size: 31px;
+      font-weight: 800;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* TIMELINE */
+
+    .timeline {
+      position: relative;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 24px;
+      width: 2px;
+      background: linear-gradient(var(--secondary), var(--accent));
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 65px 45px 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 5px solid var(--background);
+      box-shadow: 0 0 0 3px rgba(31,111,159,0.18);
+    }
+
+    .timeline-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 25px;
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+    }
+
+    .timeline-card:hover {
+      transform: translateX(-5px);
+    }
+
+    .timeline-card h3 {
+      color: var(--primary);
+      margin-bottom: 7px;
+    }
+
+    .timeline-card p {
+      color: var(--muted);
+    }
+
+    .timeline-card .badge {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(214,168,79,0.15);
+      color: #a67818;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    /* PERSONAL CARDS */
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
 
     .card {
-
-      width: min(980px, 100%);
-
-      background: #fff;
-
-      border-radius: 28px;
-
-      overflow: hidden;
-
-      box-shadow: 0 18px 55px rgba(20,35,60,.12);
-
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 25px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      transition: 0.35s;
     }
 
-
-    /* Header */
-
-    .top {
-
-      background: linear-gradient(135deg,#102a43,#1f567d);
-
-      color: #fff;
-
-      padding: 52px 42px;
-
-      display: flex;
-
-      gap: 38px;
-
-      align-items: center;
-
+    .card:hover {
+      transform: translateY(-8px);
     }
 
-
-    .photo {
-
-      width: 190px;
-
-      height: 230px;
-
-      object-fit: cover;
-
-      border-radius: 22px;
-
-      border: 5px solid rgba(255,255,255,.8);
-
-      box-shadow: 0 12px 30px rgba(0,0,0,.18);
-
+    .card i {
+      font-size: 30px;
+      color: var(--accent);
+      margin-bottom: 15px;
     }
 
-
-    h1 {
-
-      font-size: 38px;
-
-      margin: 0 0 8px;
-
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 8px;
     }
 
-
-    .subtitle {
-
-      font-size: 20px;
-
-      opacity: .92;
-
-      margin: 0;
-
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
     }
 
+    /* VISION */
 
-    /* المحتوى */
-
-    .content {
-
-      padding: 42px;
-
-    }
-
-
-    h2 {
-
-      font-size: 25px;
-
-      margin-top: 0;
-
-      color: #153b5b;
-
-    }
-
-
-    .bio {
-
-      font-size: 18px;
-
-      color: #3f4d5f;
-
-      margin-bottom: 22px;
-
-    }
-
-
-    .bio-title {
-
-      color: #153b5b;
-
-      font-size: 20px;
-
-      font-weight: bold;
-
-      margin-top: 30px;
-
-      margin-bottom: 5px;
-
-    }
-
-
-    /* المعلومات */
-
-    .facts {
-
-      display: grid;
-
-      grid-template-columns: repeat(3,1fr);
-
-      gap: 16px;
-
-      margin-top: 35px;
-
-    }
-
-
-    .fact {
-
-      background: #f4f7fa;
-
-      border-radius: 18px;
-
-      padding: 20px;
-
-      text-align: center;
-
-    }
-
-
-    .fact b {
-
-      display: block;
-
-      color: #153b5b;
-
-      margin-bottom: 5px;
-
-    }
-
-
-    /* زر الإنجازات */
-
-    .achievements-button {
-
-      display: flex;
-
-      justify-content: center;
-
-      margin: 35px 0 30px;
-
-    }
-
-
-    .achievements-button a {
-
-      display: inline-flex;
-
-      align-items: center;
-
-      gap: 10px;
-
-      padding: 14px 32px;
-
-      border-radius: 40px;
-
-      background: linear-gradient(135deg,#102a43,#1f567d);
-
+    .vision {
+      background:
+        linear-gradient(135deg, rgba(18,59,93,0.98), rgba(31,111,159,0.95));
       color: white;
-
-      text-decoration: none;
-
-      font-size: 18px;
-
-      font-weight: bold;
-
-      box-shadow: 0 8px 20px rgba(16,42,67,.2);
-
-      transition: .3s ease;
-
+      border-radius: 32px;
+      padding: 55px;
+      text-align: center;
+      box-shadow: 0 30px 80px rgba(18,59,93,0.22);
     }
 
-
-    .achievements-button a:hover {
-
-      transform: translateY(-5px) scale(1.04);
-
-      box-shadow: 0 12px 28px rgba(16,42,67,.3);
-
+    .vision i {
+      color: #e9c36a;
+      font-size: 40px;
+      margin-bottom: 18px;
     }
 
-
-    .achievements-button a:active {
-
-      transform: scale(.95);
-
+    .vision h2 {
+      font-size: 34px;
+      margin-bottom: 15px;
     }
 
+    .vision p {
+      max-width: 750px;
+      margin: auto;
+      color: rgba(255,255,255,0.78);
+    }
 
-    /* Social Media */
+    /* ACHIEVEMENTS BUTTON */
 
-    .social-icons {
+    .achievement-box {
+      text-align: center;
+      margin-top: 35px;
+    }
 
-      display: flex;
-
-      justify-content: center;
-
+    .achievement-btn {
+      display: inline-flex;
       align-items: center;
-
-      gap: 18px;
-
-      margin: 35px 0 10px;
-
-      flex-wrap: wrap;
-
+      gap: 10px;
+      padding: 15px 28px;
+      border-radius: 15px;
+      background: var(--primary);
+      color: white;
+      font-weight: 800;
+      box-shadow: 0 15px 35px rgba(18,59,93,0.20);
+      transition: 0.3s;
     }
 
+    .achievement-btn:hover {
+      transform: translateY(-5px);
+    }
+
+    /* SOCIAL */
 
     .social {
-
-      width: 58px;
-
-      height: 58px;
-
-      border-radius: 50%;
-
       display: flex;
-
       justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
 
+    .social a {
+      width: 50px;
+      height: 50px;
+      display: flex;
       align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+      font-size: 20px;
+    }
 
+    .social a:hover {
+      transform: translateY(-6px) scale(1.04);
+      background: var(--primary);
       color: white;
-
-      text-decoration: none;
-
-      font-size: 25px;
-
-      transition:
-
-        transform .3s ease,
-
-        box-shadow .3s ease;
-
     }
 
-
-    .social:hover {
-
-      transform: translateY(-7px) scale(1.12);
-
-    }
-
-
-    .social:active {
-
-      transform: scale(.92);
-
-    }
-
-
-    .facebook {
-
-      background: #1877F2;
-
-      box-shadow:
-
-        0 6px 18px rgba(24,119,242,.35);
-
-    }
-
-
-    .instagram {
-
-      background:
-
-        linear-gradient(
-
-          45deg,
-
-          #feda75,
-
-          #fa7e1e,
-
-          #d62976,
-
-          #962fbf,
-
-          #4f5bd5
-
-        );
-
-      box-shadow:
-
-        0 6px 18px rgba(214,41,118,.35);
-
-    }
-
-
-    .tiktok {
-
-      background: #000;
-
-      box-shadow:
-
-        0 6px 18px rgba(0,0,0,.35);
-
-    }
-
+    /* WHATSAPP FLOAT */
 
     .whatsapp {
-
+      position: fixed;
+      left: 22px;
+      bottom: 22px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
       background: #25D366;
-
-      box-shadow:
-
-        0 6px 18px rgba(37,211,102,.35);
-
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      z-index: 999;
+      box-shadow: 0 12px 30px rgba(37,211,102,0.35);
+      animation: pulse 2.5s infinite;
     }
 
+    /* FOOTER */
 
-    /* Footer */
-
-    .footer {
-
-      padding: 22px 42px;
-
-      background: #fafbfc;
-
-      color: #6b7280;
-
+    footer {
       text-align: center;
-
+      padding: 40px 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
       font-size: 14px;
+    }
+
+    footer strong {
+      color: var(--primary);
+    }
+
+    /* ANIMATIONS */
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(35px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 12px 30px rgba(37,211,102,0.35);
+      }
+      50% {
+        box-shadow: 0 12px 35px rgba(37,211,102,0.65);
+      }
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 100px;
+      }
+
+      .hero-box {
+        grid-template-columns: 1fr;
+        padding: 45px 25px;
+        text-align: center;
+        min-height: auto;
+      }
+
+      .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-image {
+        order: -1;
+        margin-bottom: 25px;
+      }
+
+      .image-frame {
+        width: 230px;
+        height: 280px;
+      }
+
+      .stats,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .intro-card {
+        padding: 28px 20px;
+      }
+
+      .vision {
+        padding: 38px 23px;
+      }
+
+      .vision h2 {
+        font-size: 28px;
+      }
+
+      section {
+        padding: 65px 18px;
+      }
 
     }
 
+    @media (max-width: 500px) {
 
-    /* الموبايل */
-
-    @media(max-width:700px) {
-
-      .top {
-
-        flex-direction: column;
-
-        text-align: center;
-
-        padding: 38px 24px;
-
+      .hero h1 {
+        font-size: 38px;
       }
 
-
-      .photo {
-
-        width: 170px;
-
-        height: 205px;
-
-      }
-
-
-      h1 {
-
-        font-size: 30px;
-
-      }
-
-
-      .subtitle {
-
+      .hero-subtitle {
         font-size: 18px;
-
       }
 
-
-      .content {
-
-        padding: 28px 24px;
-
+      .hero-box {
+        border-radius: 25px;
       }
 
-
-      .bio {
-
-        font-size: 17px;
-
+      .timeline-item {
+        padding-right: 50px;
       }
 
-
-      .bio-title {
-
-        font-size: 19px;
-
+      .timeline::before {
+        right: 18px;
       }
 
-
-      .facts {
-
-        grid-template-columns: 1fr;
-
-      }
-
-
-      .social {
-
-        width: 52px;
-
-        height: 52px;
-
-        font-size: 22px;
-
-      }
-
-
-      .social-icons {
-
-        gap: 14px;
-
-      }
-
-
-      .achievements-button a {
-
-        font-size: 16px;
-
-        padding: 13px 25px;
-
+      .timeline-dot {
+        right: 4px;
       }
 
     }
 
   </style>
-
 </head>
-
 
 <body>
 
+  <!-- NAVIGATION -->
 
-  <main class="hero">
+  <nav>
+    <div class="nav-inner">
+
+      <a href="#home" class="brand">
+        بدر هاني فاروق
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">نبذة</a>
+        <a href="#journey">المسيرة</a>
+        <a href="#vision">الرؤية</a>
+        <a href="achievements.html">الإنجازات</a>
+      </div>
+
+      <button class="theme-btn" onclick="toggleTheme()" aria-label="تغيير المظهر">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+    </div>
+  </nav>
 
 
-    <article class="card">
+  <!-- HERO -->
+
+  <header class="hero" id="home">
+
+    <div class="hero-box">
+
+      <div class="hero-content">
+
+        <span class="small-title">
+          🩺 طب بشري • جامعة الفيوم
+        </span>
+
+        <h1>
+          الدكتور<br>
+          <span>بدر هاني فاروق</span>
+        </h1>
+
+        <div class="hero-subtitle">
+          رحلة بدأت بالتفوق... وتستمر بالطموح.
+        </div>
+
+        <p class="hero-description">
+          طالب طب بشري بجامعة الفيوم، أسعى لبناء مستقبل مهني يجمع بين
+          العلم، الانضباط، التطوير المستمر، وخدمة المجتمع.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="achievements.html" class="btn btn-primary">
+            <i class="fa-solid fa-trophy"></i>
+            إنجازاتي
+          </a>
+
+          <a href="#about" class="btn btn-secondary">
+            <i class="fa-solid fa-user"></i>
+            تعرف عليّ
+          </a>
+
+        </div>
+
+      </div>
 
 
-      <!-- الصورة والاسم -->
+      <div class="hero-image">
 
-      <header class="top">
+        <div class="image-frame">
 
-        <img
-          class="photo"
-          src="badr-hany-farouk.jpeg"
-          alt="الدكتور بدر هاني فاروق"
-        >
+          <img
+            src="badr-hany-farouk.jpeg"
+            alt="الدكتور بدر هاني فاروق"
+          >
 
-        <div>
+        </div>
 
-          <h1>
-            الدكتور بدر هاني فاروق
-          </h1>
+      </div>
 
-          <p class="subtitle">
-            طالب طب بشري – جامعة الفيوم
+    </div>
+
+  </header>
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="section-title">
+
+      <small>ABOUT ME</small>
+
+      <h2>نبذة عن بدر هاني فاروق</h2>
+
+      <p>
+        قصة طموح بدأت من التفوق الدراسي، وتستمر نحو مستقبل في المجال الطبي.
+      </p>
+
+    </div>
+
+
+    <div class="intro-card">
+
+      <p>
+        أنا <strong>بدر هاني فاروق</strong>، طالب طب بشري بجامعة الفيوم.
+        بدأت رحلتي التعليمية منذ سنوات مبكرة، وحرصت خلالها على بناء أساس
+        قوي من العلم والانضباط والمثابرة. كان التفوق الدراسي بالنسبة لي
+        نتيجة طبيعية للاستمرار في العمل والسعي نحو الأفضل، وليس مجرد هدف
+        مؤقت.
+        <br><br>
+        أؤمن أن دراسة الطب ليست مجرد دراسة أكاديمية، بل رحلة طويلة تحتاج
+        إلى الصبر، المسؤولية، التعلم المستمر، والقدرة على التعامل مع
+        التحديات. ولذلك أسعى منذ الآن إلى تطوير نفسي علميًا وشخصيًا،
+        والاستفادة من كل تجربة يمكن أن تضيف إلى مستقبلي.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- STATS -->
+
+  <section>
+
+    <div class="section-title">
+
+      <small>HIGHLIGHTS</small>
+
+      <h2>أبرز محطات الرحلة</h2>
+
+    </div>
+
+
+    <div class="stats">
+
+      <div class="stat">
+
+        <div class="stat-icon">
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <strong>98.21%</strong>
+
+        <span>
+          نتيجة المرحلة الإعدادية
+        </span>
+
+      </div>
+
+
+      <div class="stat">
+
+        <div class="stat-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <strong>289.5</strong>
+
+        <span>
+          درجة الثانوية العامة 2026
+        </span>
+
+      </div>
+
+
+      <div class="stat">
+
+        <div class="stat-icon">
+          <i class="fa-solid fa-stethoscope"></i>
+        </div>
+
+        <strong>طب بشري</strong>
+
+        <span>
+          جامعة الفيوم
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EDUCATION JOURNEY -->
+
+  <section id="journey">
+
+    <div class="section-title">
+
+      <small>MY JOURNEY</small>
+
+      <h2>المسيرة التعليمية</h2>
+
+      <p>
+        محطات صنعت جزءًا من شخصيتي وطموحي.
+      </p>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+          <h3>
+            🎓 مدرسة السلام الخاصة
+          </h3>
+
+          <p>
+            درست في مدرسة السلام الخاصة حتى الصف الثالث الإعدادي،
+            وكانت هذه المرحلة بداية حقيقية لبناء الأساس العلمي والطموح
+            نحو التفوق.
           </p>
 
-        </div>
-
-      </header>
-
-
-
-      <!-- المحتوى -->
-
-      <section class="content">
-
-
-        <h2>
-          نبذة عن بدر هاني فاروق
-        </h2>
-
-
-        <p class="bio">
-
-          الدكتور <strong>بدر هاني فاروق</strong> طالب في مجال
-          <strong>الطب البشري بجامعة الفيوم</strong>، يسعى إلى بناء
-          مسيرة علمية ومهنية متميزة تقوم على العلم والاجتهاد والطموح
-          والتطوير المستمر.
-
-        </p>
-
-
-        <p class="bio">
-
-          ومنذ المراحل الأولى من رحلته التعليمية، حرص بدر على تحقيق
-          التفوق والتميز، مؤمنًا بأن النجاح الحقيقي لا يعتمد على
-          الموهبة وحدها، وإنما يحتاج إلى الالتزام والصبر والعمل
-          المستمر للوصول إلى الأهداف والطموحات.
-
-        </p>
-
-
-        <div class="bio-title">
-          🎓 المسيرة التعليمية
-        </div>
-
-
-        <p class="bio">
-
-          بدأ بدر هاني فاروق مسيرته التعليمية في
-          <strong>مدرسة السلام الخاصة</strong>، حيث تمكن خلال المرحلة
-          الإعدادية من تحقيق مجموع
-          <strong>275 من 280 بنسبة 98.21%</strong>.
-          وكان هذا التفوق من المحطات المهمة في رحلته التعليمية،
-          حيث ساعده على تعزيز ثقته بقدرته على تحقيق أهدافه،
-          ورسّخ لديه قيم الاجتهاد والانضباط والاستمرار.
-
-        </p>
-
-
-        <p class="bio">
-
-          بعد ذلك، واصل دراسته في
-          <strong>مدرسة صلاح سالم</strong>، وخاض مرحلة الثانوية
-          العامة لعام <strong>2026</strong>، وتمكن من تحقيق مجموع
-          <strong>289.5</strong>، لتكون هذه النتيجة محطة جديدة
-          في مسيرته التعليمية وخطوة مهمة نحو تحقيق حلمه في
-          دراسة الطب البشري.
-
-        </p>
-
-
-        <div class="bio-title">
-          🩺 بداية الرحلة الطبية
-        </div>
-
-
-        <p class="bio">
-
-          يواصل بدر حاليًا رحلته الأكاديمية في مجال
-          <strong>الطب البشري بجامعة الفيوم</strong>، حيث يعمل
-          على بناء قاعدة علمية قوية واكتساب المعرفة والمهارات
-          التي يحتاج إليها في مستقبله المهني.
-
-        </p>
-
-
-        <p class="bio">
-
-          ويرى أن دراسة الطب ليست مجرد دراسة أكاديمية، بل هي
-          مسؤولية علمية وإنسانية كبيرة، تتطلب العلم والدقة
-          والرحمة والقدرة على تحمل المسؤولية وخدمة الآخرين.
-          ولذلك يسعى إلى تطوير نفسه باستمرار ليكون مستقبلًا
-          طبيبًا يجمع بين الكفاءة العلمية والأخلاق والإنسانية.
-
-        </p>
-
-
-        <div class="bio-title">
-          📚 التعلم والتطوير
-        </div>
-
-
-        <p class="bio">
-
-          يؤمن بدر بأهمية <strong>التعلم المستمر</strong> وتطوير
-          الذات، ويسعى دائمًا إلى اكتساب المزيد من المعرفة
-          والمهارات، سواء على المستوى العلمي أو الشخصي.
-
-          كما يهتم بتنظيم وقته وتحقيق التوازن بين الدراسة
-          والحياة الشخصية، مع الحفاظ على روح الطموح والرغبة
-          الدائمة في التطور وتحقيق الأفضل.
-
-        </p>
-
-
-        <div class="bio-title">
-          🏊‍♂️ السباحة والانضباط
-        </div>
-
-
-        <p class="bio">
-
-          تعد <strong>السباحة</strong> من أهم هوايات بدر، ويعتبرها
-          وسيلة مهمة للحفاظ على النشاط والتوازن إلى جانب الدراسة.
-
-          كما يرى أن ممارسة الرياضة تساعد على بناء شخصية أكثر
-          قدرة على التحمل والاستمرار ومواجهة التحديات، وهي قيم
-          يحرص على تطبيقها في حياته الأكاديمية والشخصية.
-
-        </p>
-
-
-        <div class="bio-title">
-          🌟 الطموح والرؤية المستقبلية
-        </div>
-
-
-        <p class="bio">
-
-          لا ينظر بدر إلى الإنجازات التي حققها حتى الآن باعتبارها
-          نهاية الطريق، وإنما يعتبرها <strong>بداية لمسيرة أكبر</strong>
-          يسعى خلالها إلى تحقيق المزيد من النجاح والتقدم.
-
-        </p>
-
-
-        <p class="bio">
-
-          ويطمح مستقبلًا إلى أن يصبح طبيبًا يتمتع بالكفاءة العلمية
-          والأخلاق المهنية، وأن يكون قادرًا على تقديم قيمة حقيقية
-          للمرضى والمجتمع، وأن يترك أثرًا إيجابيًا من خلال العلم
-          والعمل وخدمة الإنسان.
-
-        </p>
-
-
-        <p class="bio">
-
-          إن رحلة بدر هاني فاروق هي رحلة طموح واجتهاد مستمرة؛
-          بدأت بالتفوق الدراسي، واستمرت بالوصول إلى دراسة الطب
-          البشري، وما زالت تحمل العديد من الأهداف والطموحات
-          التي يسعى إلى تحقيقها خطوة بعد خطوة.
-
-        </p>
-
-
-
-        <!-- المعلومات الأساسية -->
-
-        <div class="facts">
-
-
-          <div class="fact">
-
-            <b>الاسم</b>
-
-            بدر هاني فاروق
-
-          </div>
-
-
-          <div class="fact">
-
-            <b>المجال</b>
-
-            الطب البشري
-
-          </div>
-
-
-          <div class="fact">
-
-            <b>الجامعة</b>
-
-            جامعة الفيوم
-
-          </div>
-
+          <span class="badge">
+            275 / 280 • 98.21%
+          </span>
 
         </div>
 
+      </div>
 
 
-        <!-- زر الإنجازات -->
+      <div class="timeline-item">
 
-        <div class="achievements-button">
+        <div class="timeline-dot"></div>
 
-          <a href="achievements.html">
+        <div class="timeline-card">
 
-            🏆
+          <h3>
+            📚 مدرسة صلاح سالم
+          </h3>
 
-            <span>
-              إنجازاتي
-            </span>
+          <p>
+            انتقلت إلى مدرسة صلاح سالم لاستكمال المرحلة الثانوية،
+            وواصلت خلالها العمل والاجتهاد وصولًا إلى نتيجة الثانوية
+            العامة لعام 2026.
+          </p>
 
-          </a>
-
-        </div>
-
-
-
-        <!-- وسائل التواصل -->
-
-        <div class="social-icons">
-
-
-          <!-- Facebook -->
-
-          <a
-            href="https://www.facebook.com/share/1E7mv1rq5R/?mibextid=wwXIfr"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social facebook"
-            aria-label="Facebook"
-          >
-
-            <i class="fab fa-facebook-f"></i>
-
-          </a>
-
-
-
-          <!-- Instagram -->
-
-          <a
-            href="https://www.instagram.com/badr.hany44"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social instagram"
-            aria-label="Instagram"
-          >
-
-            <i class="fab fa-instagram"></i>
-
-          </a>
-
-
-
-          <!-- TikTok -->
-
-          <a
-            href="https://www.tiktok.com/@badr__hany4"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social tiktok"
-            aria-label="TikTok"
-          >
-
-            <i class="fab fa-tiktok"></i>
-
-          </a>
-
-
-
-          <!-- WhatsApp -->
-
-          <a
-            href="https://wa.me/201044447453"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social whatsapp"
-            aria-label="WhatsApp"
-          >
-
-            <i class="fab fa-whatsapp"></i>
-
-          </a>
-
+          <span class="badge">
+            289.5 درجة
+          </span>
 
         </div>
 
-
-      </section>
-
+      </div>
 
 
-      <!-- Footer -->
+      <div class="timeline-item">
 
-      <footer class="footer">
+        <div class="timeline-dot"></div>
 
-        صفحة تعريفية شخصية – بدر هاني فاروق
+        <div class="timeline-card">
 
-      </footer>
+          <h3>
+            🩺 جامعة الفيوم – طب بشري
+          </h3>
+
+          <p>
+            بداية مرحلة جديدة في الرحلة التعليمية، والانطلاق نحو دراسة
+            الطب البشري وبناء مستقبل مهني في المجال الطبي.
+          </p>
+
+          <span class="badge">
+            بداية الرحلة الطبية
+          </span>
+
+        </div>
+
+      </div>
 
 
-    </article>
+    </div>
+
+  </section>
 
 
-  </main>
+  <!-- PERSONALITY -->
 
+  <section>
+
+    <div class="section-title">
+
+      <small>BEYOND STUDY</small>
+
+      <h2>أشياء تشكل شخصيتي</h2>
+
+    </div>
+
+
+    <div class="cards">
+
+
+      <div class="card">
+
+        <i class="fa-solid fa-book-open"></i>
+
+        <h3>
+          التعلم والتطوير
+        </h3>
+
+        <p>
+          أؤمن أن النجاح الحقيقي لا يتوقف عند نتيجة أو مرحلة تعليمية،
+          لذلك أحرص على الاستمرار في التعلم وتطوير المعرفة والمهارات.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <i class="fa-solid fa-person-swimming"></i>
+
+        <h3>
+          السباحة
+        </h3>
+
+        <p>
+          السباحة من الهوايات المفضلة لدي، وأراها أكثر من مجرد رياضة؛
+          فهي تساعد على بناء الانضباط والاستمرارية وتحدي النفس.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <i class="fa-solid fa-bullseye"></i>
+
+        <h3>
+          الطموح
+        </h3>
+
+        <p>
+          أضع لنفسي أهدافًا واضحة وأسعى إلى تحقيقها خطوة بخطوة،
+          مع الإيمان بأن الاستمرارية هي أحد أهم مفاتيح النجاح.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- VISION -->
+
+  <section id="vision">
+
+    <div class="vision">
+
+      <i class="fa-solid fa-quote-right"></i>
+
+      <h2>
+        رؤيتي للمستقبل
+      </h2>
+
+      <p>
+        أطمح إلى أن تكون رحلتي في الطب رحلة علم وتأثير حقيقي،
+        وأن أستمر في تطوير نفسي واكتساب الخبرات، وصولًا إلى أن أصبح
+        طبيبًا قادرًا على تقديم قيمة حقيقية للمرضى والمجتمع.
+        <br><br>
+        النجاح بالنسبة لي ليس نقطة وصول، بل رحلة مستمرة من التعلم
+        والعمل والتطوير.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ACHIEVEMENTS -->
+
+  <section>
+
+    <div class="section-title">
+
+      <small>ACHIEVEMENTS</small>
+
+      <h2>إنجازاتي</h2>
+
+      <p>
+        تعرف على أبرز المحطات والإنجازات التي شكلت رحلتي التعليمية.
+      </p>
+
+    </div>
+
+
+    <div class="achievement-box">
+
+      <a href="achievements.html" class="achievement-btn">
+
+        <i class="fa-solid fa-trophy"></i>
+
+        مشاهدة صفحة الإنجازات كاملة
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section>
+
+    <div class="section-title">
+
+      <small>CONTACT</small>
+
+      <h2>تواصل معي</h2>
+
+      <p>
+        يمكنك متابعتي والتواصل معي عبر منصات التواصل الاجتماعي.
+      </p>
+
+    </div>
+
+
+    <div class="social">
+
+      <a
+        href="https://www.facebook.com/share/1E7mv1rq5R/?mibextid=wwXIfr"
+        target="_blank"
+        aria-label="Facebook"
+      >
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+
+      <a
+        href="https://www.instagram.com/badr.hany44"
+        target="_blank"
+        aria-label="Instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+
+      <a
+        href="https://www.tiktok.com/@badr__hany4"
+        target="_blank"
+        aria-label="TikTok"
+      >
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FLOATING WHATSAPP -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/201044447453"
+    target="_blank"
+    aria-label="WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026
+      <strong>الدكتور بدر هاني فاروق</strong>
+      — جميع الحقوق محفوظة
+    </p>
+
+  </footer>
+
+
+  <!-- DARK MODE SCRIPT -->
+
+  <script>
+
+    function toggleTheme() {
+
+      document.body.classList.toggle("dark");
+
+      const buttonIcon =
+        document.querySelector(".theme-btn i");
+
+      if (document.body.classList.contains("dark")) {
+
+        buttonIcon.classList.remove("fa-moon");
+        buttonIcon.classList.add("fa-sun");
+
+        localStorage.setItem("theme", "dark");
+
+      } else {
+
+        buttonIcon.classList.remove("fa-sun");
+        buttonIcon.classList.add("fa-moon");
+
+        localStorage.setItem("theme", "light");
+
+      }
+
+    }
+
+
+    if (localStorage.getItem("theme") === "dark") {
+
+      document.body.classList.add("dark");
+
+      const buttonIcon =
+        document.querySelector(".theme-btn i");
+
+      buttonIcon.classList.remove("fa-moon");
+      buttonIcon.classList.add("fa-sun");
+
+    }
+
+  </script>
 
 </body>
-
 </html>
